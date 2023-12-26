@@ -1,0 +1,20 @@
+server:
+  port: 8096
+  servlet:
+    context-path: /caching-service
+
+spring:
+  application:
+    name: caching-service
+
+  main:
+    banner-mode: console
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+    instance:
+      preferIpAddress: true
+      lease-renewal-interval-in-seconds: 30
+
